@@ -1,0 +1,140 @@
+*{
+  font-family: Akkarat-Mono;
+  font-family: forma-djr-micro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background-color: black;
+}
+
+
+ul{
+    display: block;
+    list-style: none;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+   box-sizing: border-box;
+   white-space: nowrap;
+    margin: 0;
+    padding: 1em;
+}
+div{
+    display: block;
+    
+}
+
+.layered-photos {
+    display: block;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: backgroundColorPalette 5s infinite ease-in-out;
+    height: 100vh;
+}
+
+
+li img{ 
+    width: 30%;
+    border: 2px white solid;
+}
+
+#arrow-div .backlinkarrow{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section li{
+    display: list-item;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+    font: 30px sans-serif;
+    font-weight: bolder;
+    line-height: 75px;
+    text-transform: uppercase;
+    background: linear-gradient(#d3d3d3 37%, #495057 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+section li:hover{
+    cursor: pointer;
+}
+
+
+
+.layered-photos .backarrow{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/*#schedulinglink a{
+    font: 40px sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}*/
+
+.acuity-embed-button{
+    background: white;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+}
+
+@keyframes backgroundColorPalette{
+    0%{
+        background: black;
+    }
+    50%{
+        background: #19191a ;
+    }
+    100%{
+        background: black;
+    }
+}
+
+
+
+
+@media  (max-width: 800px) {
+    .thumbnail-images{
+        overflow: auto;
+        padding: 4em -1em -1em;
+        position: absolute;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    section li {
+        font-size: 18px;
+    }
+
+    
+    li img{ 
+        width: 50%;
+    }
+    
+}
